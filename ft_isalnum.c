@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gugascon <gugascon@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: macbook <macbook@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 17:27:35 by gugascon          #+#    #+#             */
-/*   Updated: 2026/01/16 17:31:49 by gugascon         ###   ########.fr       */
+/*   Updated: 2026/01/17 13:16:54 by macbook          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	isalnum(int c)
+int	ft_isalnum(int c)
 {
 	if ((c >= 'A' && c <= 'Z')
 		|| (c >= 'a' && c <= 'z')

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gugascon <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: macbook <macbook@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 17:23:49 by gugascon          #+#    #+#             */
-/*   Updated: 2026/01/16 17:23:52 by gugascon         ###   ########.fr       */
+/*   Updated: 2026/01/17 13:16:54 by macbook          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	isdigit(int c)
+int	ft_isdigit(int c)
 {
 	if (c >= 0 && c <= 9)
 		return (1);
