@@ -6,10 +6,9 @@
 /*   By: gugascon <gugascong@student.42madrid.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 11:33:56 by gugascon          #+#    #+#             */
-/*   Updated: 2026/01/21 20:09:40 by gugascon         ###   ########.fr       */
+/*   Updated: 2026/01/25 12:26:45 by gugascon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libc.h"
 
@@ -29,7 +28,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	{
 		i++;
 	}
-
 	return (i);
 }
 

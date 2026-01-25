@@ -1,5 +1,17 @@
-#ifndef LIBFT.H
-# define LIBFT.H
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gugascon <gugascong@student.42madrid.co    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/25 12:17:02 by gugascon          #+#    #+#             */
+/*   Updated: 2026/01/25 13:06:22 by gugascon         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef LIBFT_H
+# define LIBFT_H
 
 # include <unistd.h>
 # include <stdlib.h>
@@ -7,9 +19,9 @@
 
 typedef struct s_list
 {
-	void            *content;
-    struct s_list   *next;
-} t_list;
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -30,8 +42,8 @@ char	*ft_strrchr(const char *s, int c);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_atoi(const char *str);
-
-
+void	*ft_calloc(size_t count, size_t size);
+char	*ft_strdup(const char *s1);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_substr(char const *s, unsigned int start, size_t len);

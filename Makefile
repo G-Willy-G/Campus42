@@ -56,18 +56,18 @@ all: $(NAME)
 
 # Crea la Libreria, objetivo libft.a dependencia $OBJS. Necesita todos los .o listados en la variables.
 $(NAME): $(OBJS)
-        $(AR) $(NAME) $(OBJS)
+	$(AR) $(NAME) $(OBJS)
 
 %.o: %.c # Regla de Compilacion, si en el anterior paso faltaba algun objeto
-        $(CC) $(CFLAGS) -c $< -o $@ # $< busca primera depedencia, $@ target de la regla, en su caso el objeto. -C solo compila, -O nombre output 
+	$(CC) $(CFLAGS) -c $< -o $@ # $< busca primera depedencia, $@ target de la regla, en su caso el objeto. -C solo compila, -O nombre output 
 
 # Limpieza
 clean:
-        $(DELETE) $(OBJS) #Borra los objetos creados.
+	$(DELETE) $(OBJS) #Borra los objetos creados.
 
 #Reconstrucción
 ft_clean: clean #Primero ejecuta clean
-        $(RM) $(NAME) # Borra libft.a, deja todo limpio
+	$(RM) $(NAME) # Borra libft.a, deja todo limpio
 
 re: fclean all #ejecuta ft_clean y all (vuelve a compilar)
 
